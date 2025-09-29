@@ -15,8 +15,8 @@ npm install -g firebase-tools
 
 # Login and create project
 firebase login
-firebase projects:create your-project-id
-firebase use your-project-id
+firebase projects: firestore-clicker-e7014
+firebase firestore-clicker-e7014
 
 # Enable services
 firebase init firestore
@@ -25,12 +25,12 @@ firebase init auth
 Firebase Configuration
 javascript// src/config/firebase.js
 export const firebaseConfig = {
-  apiKey: "your-api-key",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "your-app-id"
+  apiKey: "AIzaSyBmRaOCaNUDTEl4GuiWJ_xn-VnFUVDZblM",
+  authDomain: "firestore-clicker-e7014.firebaseapp.com",
+  projectId: "firestore-clicker-e7014",
+  storageBucket: "firestore-clicker-e7014.firebasestorage.app",
+  messagingSenderId: "811633533887",
+  appId: "1:811633533887:web:048e7190dbcd74b350f70a"
 };
 Firestore Security Rules
 javascript// firestore.rules
@@ -45,7 +45,7 @@ service cloud.firestore {
 2. Google Cloud Setup
 Enable APIs
 bashgcloud auth login
-gcloud config set project your-project-id
+gcloud config set project firestore-clicker-e7014
 
 # Enable required APIs
 gcloud services enable run.googleapis.com
@@ -289,11 +289,8 @@ fastify.register(require('@fastify/cors'), {
 ✅ Monitoring & Health Checks - Built-in monitoring and logging
 ✅ Security - JWT authentication, network isolation, CORS protection
 📁 Project Structure
-click-tracker/
+firestore-clicker/
 ├── frontend/          # React app (Firebase Hosting)
 ├── backend/           # Node.js API (Cloud Run)  
 ├── gpu-service/       # Python GPU service (GCE)
 ├── deploy.sh          # Main deployment script
-├── health-check.sh    # Health monitoring
-├── cleanup.sh         # Resource cleanup
-└── monitoring tools   # Logs, testing, env setup
