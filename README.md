@@ -1,7 +1,7 @@
 # Firebase-Clicker
 This repository has all the necessary files for the clicker app to work
 
-🚀 Key Features
+🚀 Key Features 
 ✅ Real-time Click Tracking - Each user's clicks are stored in Firestore and cached in Redis
 ✅ WebSocket Communication - Live updates across all connected clients
 ✅ GPU Compute Integration - Trigger GPU operations with progress tracking
